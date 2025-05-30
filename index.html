@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompt Optimizer Tool</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            primary: {
+              light: '#60A5FA', // blue-400
+              DEFAULT: '#3B82F6', // blue-500
+              dark: '#2563EB'    // blue-600
+            },
+            background: {
+              light: '#F9FAFB', // gray-50
+              dark: '#111827'   // gray-900
+            },
+            text: {
+              light: '#1F2937', // gray-800
+              dark: '#F3F4F6',  // gray-100
+              muted: {
+                light: '#6B7280', // gray-500
+                dark: '#9CA3AF'  // gray-400
+              }
+            },
+            border: {
+              light: '#D1D5DB', // gray-300
+              dark: '#374151'   // gray-700
+            },
+            card: {
+              light: '#FFFFFF',
+              dark: '#1F2937' // gray-800
+            }
+          }
+        }
+      },
+      plugins: [],
+    }
+  </script>
+  <style>
+    /* Basic scrollbar styling for better dark mode aesthetics */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #9CA3AF; /* gray-400 */
+      border-radius: 10px;
+      border: 2px solid transparent;
+      background-clip: content-box;
+    }
+    html.dark ::-webkit-scrollbar-thumb {
+      background-color: #4B5563; /* gray-600 */
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #6B7280; /* gray-500 */
+    }
+    html.dark ::-webkit-scrollbar-thumb:hover {
+      background-color: #374151; /* gray-700 */
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.2.0"
+  }
+}
+</script>
+</head>
+<body class="font-sans antialiased">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
+<link rel="stylesheet" href="index.css">
+<script src="index.tsx" type="module"></script>

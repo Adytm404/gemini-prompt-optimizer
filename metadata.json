@@ -1,0 +1,5 @@
+{
+  "name": "Prompt Optimizer Tool",
+  "description": "A web-based tool to refine and optimize user-provided prompts using AI, delivering clear and contextually enhanced versions in English for improved interaction with AI models. Features light and dark mode themes with persistence.",
+  "requestFramePermissions": []
+}
